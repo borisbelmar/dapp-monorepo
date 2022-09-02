@@ -10,6 +10,12 @@
     },
     "dev": {
       "cache": false
+    },
+    "client": {
+      "dependsOn": [
+        "^build",
+        "$NEXT_PUBLIC_TEST_NFT_COLLECTION"
+      ]
     }
   }
 }

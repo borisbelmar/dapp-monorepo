@@ -1,0 +1,10 @@
+{
+  "eslint.workingDirectories": [
+    "apps/admin",
+    "apps/client",
+    "packages/ui",
+    "packages/thirdweb-hooks",
+    "packages/web3-utils",
+    "packages/repositories"
+  ]
+}

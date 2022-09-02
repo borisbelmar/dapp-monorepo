@@ -1,0 +1,6 @@
+.next
+.turbo
+node_modules
+tailwind.config.js
+postcss.config.js
+next.config.js
