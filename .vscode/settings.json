@@ -6,5 +6,6 @@
     "packages/thirdweb-hooks",
     "packages/web3-utils",
     "packages/repositories"
-  ]
+  ],
+  "dotenv.enableAutocloaking": false
 }

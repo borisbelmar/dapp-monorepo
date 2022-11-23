@@ -11,7 +11,7 @@ export default function Navigation() {
   const disconnect = useDisconnect()
 
   return (
-    <nav className="bg-gray-900">
+    <nav className="bg-gray-50 dark:bg-gray-900">
       <InnerContainerLayout className="flex py-4 justify-between items-center">
         <div>
           <h5 className="font-bold text-xl">Super Marketplace</h5>

@@ -12,7 +12,7 @@ export default function Home() {
       <InnerContainerLayout className="py-6">
         <div className="mb-4">
           <h1 className="text-2xl font-bold">
-            Boxing Collection
+            DAZN #Shorts Collection
           </h1>
           <p className="">
             This collection has {nfts?.length} NFTs

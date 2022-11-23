@@ -1,4 +1,4 @@
-import { InnerContainerLayout, MainLayout, NoData } from 'ui'
+import { InnerContainerLayout, MainLayout, NoData, Select } from 'ui'
 import Navigation from '../../common/Navigation'
 import Highlights from './components/Highlights'
 import WelcomeMessage from './components/WelcomeMessage'
@@ -19,6 +19,14 @@ export default function Home() {
             buttonLabel="Create collection"
           />
         </div>
+        <Select
+          label="Select a collection"
+          options={[
+            { id: 1, label: 'Option 1', value: 'option-1' },
+            { id: 2, label: 'Option 2', value: 'option-2' }
+          ]}
+          onChange={option => console.log(option)}
+        />
         <div>
           <h3 className="text-xl font-bold mb-4">
             Your Listings
