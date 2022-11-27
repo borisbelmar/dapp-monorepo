@@ -1,6 +1,6 @@
 import type { NFTMetadata } from '@thirdweb-dev/sdk'
 import type { ImageProps } from 'next/image'
-import { ElementType, forwardRef } from 'react'
+import { forwardRef } from 'react'
 import { motion } from 'framer-motion'
 
 interface NftItemVideoImageProps {
@@ -8,7 +8,7 @@ interface NftItemVideoImageProps {
   showVideo?: boolean
   needAction?: boolean
   onPlay?: () => void
-  NextImage?: ElementType<ImageProps>
+  NextImage?: (props: ImageProps) => JSX.Element
 }
 
 const NftItemVideoImage = forwardRef<HTMLVideoElement, NftItemVideoImageProps>(({

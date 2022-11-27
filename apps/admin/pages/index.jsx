@@ -1,6 +1,6 @@
 import Home from '../components/screens/Home'
 
-export default function Docs() {
+export default function HomePage() {
   return (
     <Home />
   )

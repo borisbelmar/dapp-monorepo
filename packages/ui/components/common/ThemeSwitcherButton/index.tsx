@@ -11,15 +11,15 @@ export default function ThemeSwitcherButton({ className }: Props) {
   return (
     <button
       className={clsx(
-        'border border-solid border-gray-400 p-1 rounded aspect-square',
+        'border p-1 rounded aspect-square flex justify-center items-center',
         className
       )}
       onClick={toggleTheme}
     >
       {theme === 'dark' ? (
-        <SunIcon className="w-full" />
+        <SunIcon className="w-4" />
       ) : (
-        <MoonIcon className="w-full" />
+        <MoonIcon className="w-4" />
       )}
     </button>
   )

@@ -1,6 +1,7 @@
 import { useNFTCollection, useNFTs } from '@thirdweb-dev/react'
 import Image from 'next/image'
-import { InnerContainerLayout, MainLayout, NftItemCard } from 'ui'
+import { InnerContainerLayout, MainLayout } from 'ui'
+import { NftItemCard } from 'ui-web3'
 import Navigation from '../Navigation'
 
 export default function Home() {

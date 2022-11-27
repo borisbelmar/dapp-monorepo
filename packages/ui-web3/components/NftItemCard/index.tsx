@@ -1,12 +1,11 @@
 import type { NFTMetadata } from '@thirdweb-dev/sdk'
-import type { ElementType } from 'react'
 import type { ImageProps } from 'next/image'
 import NftItemImageOnly from './components/NftItemImageOnly'
 import NftItemWithVideo from './components/NftItemWithVideo'
 
 interface NftItemCardProps {
   nft: NFTMetadata
-  NextImage?: ElementType<ImageProps>
+  NextImage?: (props: ImageProps) => JSX.Element
 }
 
 export default function NftItemCard({ nft, NextImage }: NftItemCardProps) {

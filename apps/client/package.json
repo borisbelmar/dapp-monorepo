@@ -6,19 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next && rm -rf node_modules && rm -rf .turbo"
   },
   "dependencies": {
-    "@thirdweb-dev/react": "^2.6.5",
-    "@thirdweb-dev/sdk": "^2.3.38",
-    "ethers": "^5.7.0",
-    "next": "12.2.3",
-    "prop-types": "^15.8.1",
+    "@thirdweb-dev/react": "2.6.5",
+    "@thirdweb-dev/sdk": "2.3.38",
+    "ethers": "5.7.0",
+    "next": "12.3.4",
+    "prop-types": "15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "thirdweb-hooks": "*",
     "ui": "*",
-    "web3-utils": "*"
+    "ui-web3": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

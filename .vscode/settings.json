@@ -3,6 +3,7 @@
     "apps/admin",
     "apps/client",
     "packages/ui",
+    "packages/ui-web3",
     "packages/thirdweb-hooks",
     "packages/web3-utils",
     "packages/repositories"

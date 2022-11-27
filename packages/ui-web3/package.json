@@ -1,9 +1,10 @@
 {
-  "name": "repositories",
+  "name": "ui-web3",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "license": "MIT",
   "exports": {
     ".": {
       "require": "./dist/index.js",
@@ -11,27 +12,32 @@
       "types": "./dist/index.d.ts"      
     }
   },
-  "license": "MIT",
   "files": [
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup ./index.ts --format esm,cjs --dts",
-    "dev": "tsup ./index.ts --format esm,cjs --dts --watch",
+    "build": "tsup ./index.ts --format esm,cjs --minify --external react --dts",
+    "dev": "tsup ./index.ts --format esm,cjs --minify --external react --dts --watch",
     "lint": "TIMING=1 eslint . --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
     "eslint": "7.32.0",
-    "eslint-config-custom-node-ts": "*",
+    "eslint-config-custom-react-ts": "*",
     "tsconfig": "*",
     "tsup": "6.2.2",
+    "tw-config": "*",
     "typescript": "4.5.2"
   },
   "dependencies": {
-    "backend-utils": "*",
-    "mongoose": "6.5.2",
-    "nanoid": "4.0.0",
-    "local-types": "*"
+    "@headlessui/react": "1.7.4",
+    "@heroicons/react": "1.0.6",
+    "clsx": "1.2.1",
+    "framer-motion": "6.5.1",
+    "react": "17.0.2",
+    "web3-utils": "*",
+    "ui": "*"
   }
 }
