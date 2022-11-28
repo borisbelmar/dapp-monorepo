@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import { ReactNode, useEffect } from 'react'
 import InnerContainerLayout from './InnerContainerLayout'
 
 interface MainLayoutProps {
@@ -7,6 +7,10 @@ interface MainLayoutProps {
 }
 
 export default function MainLayout({ children, NavigationComponent }: MainLayoutProps) {
+  useEffect(() => {
+    document.body.classList.add('bg-gray-50', 'dark:bg-gray-900')
+  }, [])
+
   return (
     <main
       className="flex flex-col min-h-screen w-full bg-white dark:bg-gray-800 text-gray-800 dark:text-white"

@@ -1,12 +1,12 @@
-import { useNFTCollection, useNFTs } from '@thirdweb-dev/react'
+import { useContract, useNFTs } from '@thirdweb-dev/react'
 import Image from 'next/image'
 import { InnerContainerLayout, MainLayout } from 'ui'
 import { NftItemCard } from 'ui-web3'
 import Navigation from '../Navigation'
 
 export default function Home() {
-  const nftCollection = useNFTCollection(process.env.NEXT_PUBLIC_TEST_NFT_COLLECTION)
-  const { data: nfts } = useNFTs(nftCollection)
+  const { contract } = useContract(process.env.NEXT_PUBLIC_TEST_NFT_COLLECTION)
+  const { data: nfts } = useNFTs(contract)
 
   return (
     <MainLayout NavigationComponent={Navigation}>

@@ -47,7 +47,7 @@ export default function Select<T>({
             </Listbox.Label>
           )}
           <div className="relative mt-1">
-            <Listbox.Button className="relative w-full cursor-default rounded-md border border-gray-400 dark:border-gray-300 bg-white dark:bg-gray-800 py-2 pl-3 pr-10 text-left shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 sm:text-sm">
+            <Listbox.Button className="relative w-full cursor-default rounded-md border border-gray-400 dark:border-gray-300 bg-white dark:bg-gray-800 py-2 pl-3 pr-10 text-left shadow-sm focus:border-primary-500 dark:focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 sm:text-sm">
               <span className="block truncate">
                 {selectedVal?.label}
               </span>

@@ -1,6 +1,6 @@
 import Home from '../components/screens/Home'
 
-export default function Web() {
+export default function HomePage() {
   return (
     <Home />
   )

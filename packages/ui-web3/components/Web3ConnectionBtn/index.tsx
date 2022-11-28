@@ -18,7 +18,7 @@ export default function Web3ConnectionBtn({
 }: Props) {
   if (address) {
     return (
-      <div className="border rounded py-1 px-2 bg-white bg-opacity-10">
+      <div className="border rounded flex flex-col justify-center py-1 px-2 bg-white bg-opacity-10">
         <h6 className="text-xs font-bold">
           Connected as {truncateAddress(address)}
         </h6>
@@ -28,7 +28,7 @@ export default function Web3ConnectionBtn({
           </span>
           <span className="mx-1">|</span>
           <button
-            className="underline text-cyan-500 hover:text-cyan-300"
+            className="underline text-cyan-500 hover:text-cyan-300 focus:font-bold"
             onClick={onDisconnect}
           >
             Disconnect

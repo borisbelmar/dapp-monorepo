@@ -1,12 +1,11 @@
-import { useMetamask, useAddress, useDisconnect } from '@thirdweb-dev/react'
-import { useAddressBalance } from 'thirdweb-hooks'
+import { useMetamask, useAddress, useDisconnect, useBalance } from '@thirdweb-dev/react'
 import { InnerContainerLayout, ThemeSwitcherButton } from 'ui'
 import { Web3ConnectionBtn } from 'ui-web3'
 
 export default function Navigation() {
   const connectWithMetamask = useMetamask()
   const address = useAddress()
-  const { balance } = useAddressBalance(address)
+  const { data: balance } = useBalance()
   const disconnect = useDisconnect()
 
   return (
@@ -17,7 +16,7 @@ export default function Navigation() {
             NFT Marketplace Dashboard
           </h5>
         </div>
-        <div className="flex h-10 gap-2">
+        <div className="flex h-12 gap-2">
           <Web3ConnectionBtn
             address={address}
             balance={balance}

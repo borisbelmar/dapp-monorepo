@@ -10,14 +10,13 @@
     "clean": "rm -rf .next && rm -rf node_modules && rm -rf .turbo"
   },
   "dependencies": {
-    "@thirdweb-dev/react": "2.6.5",
-    "@thirdweb-dev/sdk": "2.3.38",
-    "ethers": "5.7.0",
+    "@thirdweb-dev/react": "3.6.2",
+    "@thirdweb-dev/sdk": "3.6.2",
+    "ethers": "5.7.2",
     "next": "12.3.4",
     "prop-types": "15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "thirdweb-hooks": "*",
     "ui": "*",
     "ui-web3": "*"
   },

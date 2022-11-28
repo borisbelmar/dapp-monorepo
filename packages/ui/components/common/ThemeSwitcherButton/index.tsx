@@ -17,9 +17,9 @@ export default function ThemeSwitcherButton({ className }: Props) {
       onClick={toggleTheme}
     >
       {theme === 'dark' ? (
-        <SunIcon className="w-4" />
+        <SunIcon className="w-5" />
       ) : (
-        <MoonIcon className="w-4" />
+        <MoonIcon className="w-5" />
       )}
     </button>
   )

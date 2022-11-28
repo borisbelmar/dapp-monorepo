@@ -1,13 +1,12 @@
 /* eslint-disable react/jsx-filename-extension */
-import { useMetamask, useAddress, useDisconnect } from '@thirdweb-dev/react'
+import { useMetamask, useAddress, useDisconnect, useBalance } from '@thirdweb-dev/react'
 import { InnerContainerLayout } from 'ui'
 import { Web3ConnectionBtn } from 'ui-web3'
-import { useAddressBalance } from 'thirdweb-hooks'
 
 export default function Navigation() {
   const connectWithMetamask = useMetamask()
   const address = useAddress()
-  const { balance } = useAddressBalance(address)
+  const { data: balance } = useBalance()
   const disconnect = useDisconnect()
 
   return (
